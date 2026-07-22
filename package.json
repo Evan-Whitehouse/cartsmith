@@ -1,0 +1,15 @@
+{
+  "name": "cartsmith-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Optimize a Riftbound TCGPlayer cart across the fewest sellers, from a pasted deck list.",
+  "workspaces": [
+    "core",
+    "extension"
+  ],
+  "scripts": {
+    "test": "npm test --workspace core",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "license": "MIT"
+}

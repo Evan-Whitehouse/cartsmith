@@ -1,0 +1,21 @@
+{
+  "name": "@cartsmith/extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "cartsmith MV3 browser extension: optimize and one-click-add a Riftbound TCGPlayer cart.",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cartsmith/core": "*"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}

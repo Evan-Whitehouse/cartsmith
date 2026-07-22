@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>cartsmith</title>
+  </head>
+  <body>
+    <header>
+      <h1>cartsmith</h1>
+      <p class="tag">Riftbound — cheapest cart, fewest packages</p>
+    </header>
+
+    <main>
+      <label class="field">
+        <span>Deck list</span>
+        <textarea id="deck" rows="7" placeholder="3 Fiora - Peerless&#10;7 Body Rune&#10;2 Zhonya's Hourglass&#10;…"></textarea>
+      </label>
+
+      <div class="row">
+        <label class="field narrow">
+          <span>Max sellers</span>
+          <input id="maxSellers" type="number" min="1" max="20" value="5" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="chk"><input type="checkbox" id="condNM" checked /> Near Mint</label>
+        <label class="chk"><input type="checkbox" id="condLP" /> + Lightly Played</label>
+      </div>
+
+      <button id="optimize" class="primary">Optimize cart</button>
+
+      <div id="status" class="status" hidden></div>
+      <section id="result" hidden></section>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
